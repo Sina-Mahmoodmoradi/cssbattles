@@ -7,18 +7,15 @@
                 justify-content:center;
                 align-items:center;
             }
-            .container{
-                display:flex;
-                flex-direction: column;
-            }
             .top{
                 background-color:#F3AC3C;
                 width:120px;
                 height:120px;
                 position: relative;
-                top:60px;
-                left:60px;
+                top:-60px;
+                left:-60px;
                 border-radius: 50%;
+                order:3;
             }
             .middle{
                 background-color:#998235;
@@ -26,23 +23,23 @@
                 height:120px;
                 position: relative;
                 border-radius: 50% 0 50% 50%;
+                order:2;
             }
             .bottom{
                 background-color:#F3AC3C;
                 width:120px;
                 height:120px;
                 position: relative;
-                top:-60px;
-                left:-60px;
+                top:60px;
+                left:60px;
                 border-radius: 50% 0 50% 50%;
+                order:1;
             }
         </style>
     </head>
     <body>
-        <div class="container">
             <div class="top"></div>
             <div class="middle"></div>
             <div class="bottom"></div>
-        </div>
     </body>
 </html>
